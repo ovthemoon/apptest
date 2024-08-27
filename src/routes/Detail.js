@@ -14,7 +14,7 @@ function Detail() {
 
     useEffect(() => {
         getMovie();
-    },[])
+    },[id]);
     return (
         <div>
             {isLoading ? <h1>Loading...</h1> :<div>
