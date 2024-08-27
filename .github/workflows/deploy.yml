@@ -25,6 +25,6 @@ jobs:
       - name: Deploy to Build branch
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: build  # 'gh-pages' 대신 'build' 브랜치 사용
-          publish_dir: ./build  # 빌드 출력 디렉토리에 맞게 조정하세요
+          github_token: ${{ secrets.PAT_TOKEN }}  # PAT_TOKEN으로 변경
+          publish_branch: build
+          publish_dir: ./build
